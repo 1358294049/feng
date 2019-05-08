@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="stage">
+        <div class="pic">
+            <img src="./oo.jpg" alt="">
+            <div class="mask"></div>
+        </div>
+    </div>
+    <div class="zoom"></div>
+    <style>
+        img {
+            display: block;
+            /* width: 480px;
+            height: 270px; */
+        }
+        .pic,
+        .zoom{
+            width: 480px;
+            height: 270px;
+            float: left;
+            position: relative;
+        }
+        .zoom {
+            background: lightblue;
+            margin-left: 10px;
+            overflow: hidden;
+        }
+        .stage{
+            position: relative;
+        }
+        .mask {
+            width: 240px;
+            height: 135px; background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        .zoom img {
+            width: 200%;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            
+        }
+    </style>
+    <script>
+        var pic = document.querySelector('.pic')
+        var mask = document.querySelector('.stage .mask')
+        var zoom = document.querySelector('.zoom')
+        var picImg = document.querySelector('.pic img')
+
+
+        // zoom.appendChild(picImg.cloneNode())//选择，插入图片
+        // var zoomImg = document.querySelector('.zoom img')
+
+
+        zoom.appendChild(picImg.cloneNode())
+        var zoomImg = document.querySelector('.zoom img')
+
+        pic.onmousemove = function (e) {
+            console.log(e);
+            
+            var x = (e.pageX -8) -120
+            var y = (e.pageY - 8) - 67.5
+
+            if (x > 240) {
+                x = 240
+                
+            }
+            if (x < 0) {
+                x = 0
+            }
+            if (y > 135) {
+                y = 135
+            }
+            if (y < 0) {
+                y = 0
+            }
+
+
+            mask.style.top = y + 'px'
+            mask.style.left = x + 'px'
+            
+            zoomImg.style.top = -y*2 + 'px'
+            zoomImg.style.left = -x*2 + 'px'
+            
+        }
+    </script>
+</body>
+</html>

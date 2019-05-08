@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <style type="text/css">
+        #canvas {
+            border: 1px solid red;
+            background: black;
+        }
+    </style>
+    <script>
+        /** @type {HTMLCanvasElement} */
+        var canvas = document.getElementById("canvas")
+        var ctx = canvas.getContext('2d')
+        //头
+        ctx.arc(250, 200, 100, 2 / 2 * Math.PI, Math.PI * 4 / 2, )
+        ctx.strokeStyle = 'lightblue'
+        ctx.stroke()
+        ctx.fillStyle = 'lightblue'
+        ctx.fill()
+        ctx.beginPath()
+
+
+        ctx.fillStyle = 'lightblue'
+        ctx.fillRect(150, 210, 200, 150)
+
+        ctx.beginPath()
+
+        ctx.strokeStyle = 'lightblue'
+        ctx.lineCap = 'round'
+        ctx.moveTo(168, 360)
+        ctx.lineTo(332, 360)
+        ctx.lineWidth = 35
+        ctx.stroke()
+
+        ctx.beginPath()
+
+
+
+        ctx.strokeStyle = 'lightblue'
+        ctx.lineCap = 'round'
+        ctx.moveTo(210, 360)
+        ctx.lineTo(210, 450)
+        ctx.lineWidth = 40
+        ctx.stroke()
+
+
+        ctx.beginPath()
+
+
+
+        ctx.strokeStyle = 'lightblue'
+        ctx.lineCap = 'round'
+        ctx.moveTo(290, 360)
+        ctx.lineTo(290, 450)
+        ctx.lineWidth = 40
+        ctx.stroke()
+
+        ctx.beginPath()
+
+
+
+        ctx.strokeStyle = 'lightblue'
+        ctx.lineCap = 'round'
+        ctx.moveTo(120, 200)
+        ctx.lineTo(120, 300)
+        ctx.lineWidth = 40
+        ctx.stroke()
+
+        ctx.beginPath()
+
+
+
+        ctx.strokeStyle = 'lightblue'
+        ctx.lineCap = 'round'
+        ctx.moveTo(380, 200)
+        ctx.lineTo(380, 300)
+        ctx.lineWidth = 40
+        ctx.stroke()
+
+        ctx.beginPath()
+
+        // 天线
+        ctx.strokeStyle = 'lightblue'
+        ctx.lineCap = 'round'
+        ctx.moveTo(250, 190)
+        ctx.lineTo(160, 60)
+        ctx.lineWidth = 8
+        ctx.stroke()
+
+        ctx.strokeStyle = 'lightblue'
+        ctx.lineCap = 'round'
+        ctx.moveTo(250, 190)
+        ctx.lineTo(350, 60)
+        ctx.lineWidth = 8
+        ctx.stroke()
+
+        // 眼睛
+
+        ctx.beginPath()
+
+        ctx.arc(220, 150, 5, 0, Math.PI * 2, )
+        ctx.strokeStyle = 'white'
+        ctx.lineWidth = 10
+        ctx.stroke()
+
+        ctx.beginPath()
+
+        ctx.arc(280, 150, 5, 0, Math.PI * 2, )
+        ctx.strokeStyle = 'white'
+        ctx.lineWidth = 10
+        ctx.stroke()
+    </script>
+</body>
+
+</html>

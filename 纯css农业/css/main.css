@@ -1,0 +1,384 @@
+body {
+	margin: 0;
+	background: #eee;
+}
+
+.wrap {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.top {
+	background: lightpink;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.top ul {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.top ul li {
+	float: left;
+	margin: 0 10px;
+	line-height: 58px;
+	color: white;
+}
+
+.top ul li i {
+	font-style: normal;
+	margin-left: 20px;
+}
+
+.top ul li:last-child:after {
+	content: none;
+	/* 伪元素 */
+	/* content: '00000'; */
+}
+
+.top ul li:after {
+	content: '/';
+	font-style: normal;
+	margin-left: 20px;
+	color: white;
+}
+
+ul li a {
+	text-decoration: none;
+	/* transition: all .3s; */
+}
+
+.top ul li:first-child a {
+	color: #FAEE0D;
+	border-top: 4px solid #FAEE0D;
+}
+
+.top ul li a:hover {
+	color: #FAEE0D;
+	border-top: 4px solid #FAEE0D;
+	transition: all .3s;
+}
+
+.top .right {
+	float: right;
+}
+
+.top form {
+	float: right;
+	margin-top: 13px;
+	position: relative;
+	/* 相对定位 */
+	top: 0;
+	right: 0;
+	margin-right: 10px;
+}
+
+.top form input {
+	height: 32px;
+	color: white;
+	background: none;
+	font-size: 14px;
+	border: 1px solid white;
+	outline: none;
+	padding: 0 10px;
+}
+
+.top form input:last-child {
+	padding: 0;
+	width: 22px;
+	height: 22px;
+	background: url(../img/search.png);
+	background-position: center;
+	border: none;
+	position: absolute;
+	/* 绝对定位 */
+	top: 6px;
+	right: 6px;
+}
+
+.didi {
+	background: url(../img/banner.jpg) no-repeat;
+	background-size: cover;
+	padding: 20px;
+	/* overflow: hidden; */
+}
+
+.didi .six {
+	text-align: center;
+	padding-top: 250px;
+	clear: both;
+}
+
+.didi span {
+	font-size: 64px;
+	color: white;
+}
+
+/* .didi span:before {
+	content: '';
+	disiplay: inline-block;
+} */
+
+.grids li {
+	margin: 0 auto;
+	width: 25%;
+	/* background: lightblue; */
+	list-style: none;
+	text-align: center;
+	float: left;
+}
+
+.grids li .card {
+	background: #16A667;
+	margin: 0 20px;
+	color: white;
+	padding: 15px 20px;
+}
+
+.grids li .card img {
+	border: 8px solid white;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.grids li .card img:hover {
+	transform: rotateY(360deg);
+	transition: all .8s;
+}
+
+.didi .grids {
+	position: relative;
+	top: 150px;
+	overflow: hidden;
+}
+.section {
+	padding-bottom: 50px;
+}
+.section h3 {
+	padding-top: 130px;
+	/* margin-left: 50px; */
+	font-size: 38px;
+}
+
+.section .row .left {
+	width: 40%;
+	float: left;
+	/* clear: both; */
+}
+
+.section .row .right {
+	width: 60%;
+	float: left;
+	/* clear: right; */
+}
+
+.section .row p {
+	margin-left: 40px;
+	padding-top: 20px;
+}
+
+.section .row {
+	overflow: hidden;
+}
+
+.services h4 {
+	font-size: 38px;
+}
+
+.three {
+	/* margin-left:20px; */
+	color: white;
+	background: #333;
+	overflow: hidden;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.three li .rop {
+	width: 33.33%;
+	float: left;
+}
+
+.three li {
+	list-style: none;
+	text-align: center;
+}
+
+.three li .rop img {
+	background: #16A667;
+	border-radius: 10px;
+	/* 圆角 */
+	padding: 5px 16px;
+}
+
+.three li .rop img:hover {
+	background: orange;
+	transition: all .3;
+}
+
+.works {
+	background: #eee;
+	list-style: none;
+	/* overflow: hidden; */
+	margin-top: 30px;
+}
+
+.works .rrrr {
+	overflow: hidden;
+}
+
+.works .rrrr h {
+	font-size: 38px;
+	padding: 50px auto;
+}
+
+.works .back li {
+	float: left;
+	width: 25%;
+
+	position: relative;
+}
+
+.works .back img {
+	width: 100%;
+	display: block;
+}
+
+.back li .box {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	overflow: hidden;
+	/* display: inline; */
+	text-align: center;
+	background: rgba(100, 100, 100, 0.5);
+	box-shadow: 0px 0px 20px 0px yellow;
+	transition: all 1s;
+	transform: scale(0);
+	/* 缩放 */
+}
+
+.back .box img {
+	display: inline;
+	position: relative;
+	width: 60px;
+	top: 50%;
+	margin-top: -50PX;
+}
+
+.back li:hover .box {
+	transform: scale(1);
+}
+
+.second h3 {
+	font-size: 38px;
+	/* overflow: hidden; */
+}
+
+.last {
+	width: 33.33%;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.new {
+	overflow: hidden;
+	padding-bottom: 50px;
+	/* padding: 56px; */
+}
+
+.last a/*行内元素 */{
+	background: #f2af00;
+	text-decoration: none;
+	/* 文字底线 */
+	color: white;
+	line-height: 40px;
+	width: 120px;
+	display: block;
+	/* 行内元素转换块级元素 */
+	text-align: center;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	/* 决定先后权限 */
+}
+
+.last a:before {
+	content: '';
+	display: block;
+	/* 行内元素转换块级元素 */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #16A667;
+	z-index: -1;
+	transition: all 1s;
+}
+
+.last a:hover:before {
+	/* 鼠标移动 */
+	transform: rotateX(90deg);
+	/* 绕X轴旋转 */
+}
+.categories {
+	background: #3f454d;
+	color: white;
+	overflow: hidden;
+}
+.room h3 {
+	font-size: 38px;
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/* .categories .container .up {
+	width: 33.33%;
+} */
+.categories .container .up .cc {
+	overflow: hidden;
+	/* padding: 10px; */
+}
+.categories .container .up .cc .up1 {
+	float: left;
+}
+.categories .container .up .cc .up1 img {
+	width: 75px;
+}
+.categories .container .up .cc .uptext a:hover {
+	color: orange;
+	transition: all .8s;
+}
+.categories .container .up .uptext a {
+	float: left;
+	/* clear: both; */
+	margin-left: 10px;
+	color: white;
+	text-decoration: none;
+}
+.categories .container .up .uptext p {
+	float: left;
+	display: block;
+	width: 70%;
+	margin-left: 10px;
+}
+.room {
+	width: 33.33%;
+	float: left;
+}
+.content li {
+	padding: 10px;
+	list-style-image: url(../img/list-arrow.png);
+}
+
+
+
