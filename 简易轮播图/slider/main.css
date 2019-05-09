@@ -1,3 +1,6 @@
+body {
+  background: #444444;
+}
 .box {
   width: 500px;
   background: blue;
