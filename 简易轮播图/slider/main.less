@@ -1,0 +1,100 @@
+.box {
+    width: 500px;
+    background: blue;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 25px;
+
+    .content {
+        overflow: hidden;
+        width: 2500px;
+        transition: all 0.8s;
+
+        li {
+            list-style: none;
+            text-align: center;
+            width: 500px;
+            height: 300px;
+            line-height: 300px;
+            color: white;
+            float: left;
+
+            &:nth-child(1) {
+                background: pink;
+            }
+
+            &:nth-child(2) {
+                background: lightblue;
+            }
+
+            &:nth-child(3) {
+                background: lightgreen;
+            }
+
+            &:nth-child(4) {
+                background: lightsalmon;
+            }
+
+            &:nth-child(5) {
+                background: lightgoldenrodyellow;
+            }
+
+            // i {
+            //     // font-size: 50px;
+            // }
+
+        }
+
+    }
+
+    .btn {
+        span {
+            position: absolute;
+            top: 50%;
+            // font-size: 
+            // background: red;
+            padding: 0 20px;
+            line-height: 40px;
+            color: white;
+            margin-top: -20px;
+            transition: all .3s;
+            // size: 32px;
+
+
+            i {
+                font-size: 48px;
+                opacity: 0.4;
+                color: red;
+                // background: blue;
+
+            }
+
+
+
+            &:first-child {
+                left: -70px;
+            }
+
+            &:last-child {
+                right: -80px;
+            }
+        }
+
+    }
+
+    &:hover {
+        .btn {
+            span {
+                &:first-child {
+                    left: 0px;
+                }
+
+                &:last-child {
+                    right: 0px;
+                }
+
+            }
+        }
+    }
+}

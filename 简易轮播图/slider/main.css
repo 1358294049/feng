@@ -1,0 +1,63 @@
+.box {
+  width: 500px;
+  background: blue;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 25px;
+}
+.box .content {
+  overflow: hidden;
+  width: 2500px;
+  transition: all 0.8s;
+}
+.box .content li {
+  list-style: none;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  line-height: 300px;
+  color: white;
+  float: left;
+}
+.box .content li:nth-child(1) {
+  background: pink;
+}
+.box .content li:nth-child(2) {
+  background: lightblue;
+}
+.box .content li:nth-child(3) {
+  background: lightgreen;
+}
+.box .content li:nth-child(4) {
+  background: lightsalmon;
+}
+.box .content li:nth-child(5) {
+  background: lightgoldenrodyellow;
+}
+.box .btn span {
+  position: absolute;
+  top: 50%;
+  padding: 0 20px;
+  line-height: 40px;
+  color: white;
+  margin-top: -20px;
+  transition: all .3s;
+}
+.box .btn span i {
+  font-size: 48px;
+  opacity: 0.4;
+  color: red;
+}
+.box .btn span:first-child {
+  left: -70px;
+}
+.box .btn span:last-child {
+  right: -80px;
+}
+.box:hover .btn span:first-child {
+  left: 0px;
+}
+.box:hover .btn span:last-child {
+  right: 0px;
+}
