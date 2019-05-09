@@ -16,4 +16,4 @@
 <a href="https://1358294049.github.io/feng/纯css农业/css.html
 ">纯css农业页面</a>
 
-<a href="https://1358294049.github.io/feng/简易轮播图/slider.html">js轮播图</a>
+<a href="https://1358294049.github.io/feng/简易轮播图/slider/slider.html">js轮播图</a>
